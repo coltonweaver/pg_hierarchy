@@ -1,0 +1,9 @@
+-- complain if script is sourced in psql, rather than via CREATE EXTENSION
+\echo Use "CREATE EXTENSION pg_hierarchy" to load this file. \quit
+
+-- The hierarchy schema is where all closure tables will live.
+CREATE SCHEMA hierarchy;
+
+CREATE FUNCTION hierarchy.version() RETURNS text AS
+'MODULE_PATHNAME', 'hierarchy_version'
+LANGUAGE C IMMUTABLE STRICT;

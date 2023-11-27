@@ -1,0 +1,4 @@
+comment = 'Make querying hierarchical data easier'
+default_version = 'HIERARCHY_VERSION'
+relocatable = false
+module_pathname = '$libdir/pg_hierarchy'

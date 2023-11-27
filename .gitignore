@@ -1,0 +1,10 @@
+# Built binaries
+*.o
+*.so
+
+# Generated extension files
+pg_hierarchy--*.sql
+pg_hierarchy.control
+
+# Editors
+.vscode/
